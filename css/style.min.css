@@ -442,7 +442,8 @@ img {
 }
 .header__navigation-documents {
   text-align: center;
-  background-color: #000000;
+  background-color: #FFFFFF;
+  color: #000000;
   padding: 37px 35px 46px 35px;
 }
 .header__navigation-residence {
