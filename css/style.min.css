@@ -329,6 +329,7 @@ template {
 body {
   font-style: normal;
   overflow-x: hidden;
+  background: rgb(238, 238, 238);
 }
 
 img {
@@ -471,13 +472,8 @@ img {
     margin-bottom: 143px;
   }
 }
-.main {
-  position: relative;
-  background: rgb(238, 238, 238);
-}
 
-.main__wrapper {
-  position: relative;
+.main {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;

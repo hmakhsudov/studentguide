@@ -6,8 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 <body>
-	<header class="header">
-        
+	<header class="header">   
 		<nav class="header__navbar">
 			<div class="header__navbar-menu">
 				<span></span>
@@ -80,301 +79,296 @@
 		</div>
 	</header>
 
-    
-
-	<main class="main">
-        
+    <!-- <main class="main">
         <div class="main__wrapper">
-            <div class="main__header">
-                <h2 class="main__title">Общая информация</h2>
-            </div>
-
             
-            <div class="information-select">
-                <div data-card="card-dormitory" class="information-select__card dormitory-types is-active">
-                    Типы общежитий
-                </div>
-                <div data-card="card-rules" class="information-select__card rules">
-                    Правила
-                </div>
-                <div data-card="card-residence" class="information-select__card residence">
-                    Проживание
-                </div>
+        </div>
+    </main> -->
+
+	<main class="main">      
+        <div class="main__header">
+            <h2 class="main__title">Общая информация</h2>
+        </div>
+
+        <div class="information-select">
+            <div data-card="card-dormitory" class="information-select__card dormitory-types is-active">
+                Типы общежитий
             </div>
-            <div class="information-content">
+            <div data-card="card-rules" class="information-select__card rules">
+                Правила
+            </div>
+            <div data-card="card-residence" class="information-select__card residence">
+                Проживание
+            </div>
+        </div>
 
-                <div id="card-dormitory" class="information dormitory-types is-active">
-
-                            <div class="information__headers">
-                                <div class="information__header-none">
-                                    Блочный тип
-                                </div>
-                                <div class="information__header-block">
-                                    Блочный тип
-                                </div>
-                                <div class="information__header-corridor">
-                                    Коридорный тип
-                                </div>
-                                <div class="information__header-flat">
-                                    Квартирный тип
-                                </div>
-                                <div class="information__header-comfort">
-                                    КПК
-                                </div>
+        <div class="information-content">
+            <div id="card-dormitory" class="information dormitory-types is-active">
+                        <div class="information__headers">
+                            <div class="information__header-none">
+                                Блочный тип
                             </div>
-
-                        
-
-                            <div class="information__about">
-                                <div class="information__icon">
-                                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <rect width="74" height="74" fill="url(#pattern0)"/>
-                                        <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_1047_334" transform="scale(0.01)"/>
-                                        </pattern>
-                                        <image id="image0_1047_334" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEGklEQVR4nO2dS48NQRSAPwtMRCJYmTHYyCBhjfgBrIV4rMVzIYT/Iv6AYcYk2GDLGMYjXiEkRFgZr5mxkpGWuimJlO6eW9PVt09XnS85qzlT91R/XXXr3tvdBYqiKIoii43AKDADZAuMGWAYGBBWX5111YLp7NcKIjInpgJ3PlR9oeuqjdGAMjIbl4TWF7Ku2qgyTWUF8UNofSHr8mYJcAqYAH7WcNCzyMIco3vASXvsgtIPPBbQyayl8QhYE0qGsasyqCzlYaiRckrAGZZFEidCCJlwGr1mpzClHLMkvu4cu3ECMOs02oq1txDWOsfOrPAq4w47peHjp0JaKGQQGLFD0sQYMFTSprR8X3za77mQwYLvhr7Zv0nP98W3/Z4LGSlZ5l1uQb4vvu33XEjZd0PTLcj3xbd9UUJ+tCDfF9/2ey5krKTA4Rbk++Lbfs+FDNk3NDfvi/1gJD3fF9/2ey4Eu7q4bOfQaXumlHVeWr4vPu03IkQpRoUIQ4UIQ4UIozEhWeJRhApBheSeCalFETpCUCH1nAnCad0IiZ1MhchChQhDhQhDhQhDhQhDhQhDhQhDhQhDhQhDhQhDhQhDhQgjWSHbgLP2/vKX9pqouS6+Yp+zuS/s9bhngK0B60pKSB9wHHhWw28bT4GjwNKKNSYj5ADwqQc/Mn0E9leoM3ohK4GrPRDhhpnOVgg+Lo288AbgTclBy7tBxrfusgfOvAbWe9YcrZANJVPUBLDPzvdVhSy1bd0vmcLWpy5kZcHI+AwcAhZVaL8o37R52L6Gm/PKY/qKUkjee8aDQPfqzZe/DpjMybuSqpCDBVPU8kDtd5O/DLiTk7s3UPsLqbuRF+7Led94A6wK1L5P/mrgrZP7oYsHxUQl5JiT+xvYOc//vP8n/10Xdfvk77I1/FvTkZSEuJ/AL3RRxx67EjKxu4b8i05NT1IRsi1ndJgHUzbNUM4o2ZKCkLNO3i3kcNup7XQKQtyngp5DDuc9lsDRCHnp5G1HDjuc2p6nIOS74AeiDebcex69kF9OnvlMIoU+pzZTa/RC3KcghHyOVVU2O7WZWqMXctPJM19dbEKGjLtObabWaISkFkWoEFRI7pmQWhShIwQVUs+ZIJzWjZDYyVSILFSIMFSIMFSIMFonJLUoQoWgQnLPhNSiCB0hqBBF4ghR8lEhwlAhsQuZEXyVSJLb5rkbS5rNElVKdzJu1LGx5EkBa/wskjBX/Vdmid3tuOnOZC0Pc2fYYgLRb3c7brpTWUtjMuT23X9ZbHc7Hs/ZH1eD/47BrL3O61jIkeGDW1DVvKaIpR/RdCSLpB+dzbF8p64Q+wqGJpZ+dHYq8+3IJeQxHEk/Oh8Wpzw6MWVXb9IYiKQfHfrt2VI27KdtjthOEE8/FEVRFNLhDxutVO4k/wUrAAAAAElFTkSuQmCC"/>
-                                        </defs>
-                                        </svg>
-                                        
-                                </div>
-                                <div class="information__about-text">
-                                    <span class="">Кухня на каждом этаже</span> 
-                                 </div>
-                                 <div class="information__about-text">
-                                    <span class="">Кухня на каждом этаже</span> 
-                                 </div>
-                                 <div class="information__about-text">
-                                    <span class="">Кухня на каждой квартире</span> 
-                                 </div>
-                                 
-                                <div class="information__about-text">
-                                   <span class="">Кухня на каждом этаже</span> 
-                                </div>
-                                <div class="information__icon">
-                                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <rect width="74" height="74" fill="url(#pattern1)"/>
-                                        <defs>
-                                        <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_1047_335" transform="scale(0.01)"/>
-                                        </pattern>
-                                        <image id="image0_1047_335" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1UlEQVR4nO2byWsUQRSHP1dwQRAXYkwrKpK7iAu4gojgPyCI4AYq0atL9C9QVDwIAVfwohKIxoMXFUE0cQuoRxHjmoNR43jSqCUFJUhZmRgySb2qeR88GOh502/prq6qXw+kh/FsoMcVbUjeGL1DZGG0IbIw2hBZGG2ILIw2RBZGGyILow2RhdGGyMJoQ2RhtCGyMNoQWRhtiCyMNkQWRhsiC6MNkYXRhshgPLA60JDPfXz+Y9ZnXOzgc2EGsBu4BXwLFPt/zfreBBqAmthJpcgKoBn4Pogm9GX2Ny8Dy2InmQJL3N1ghsluAItjJy2RqcBZ4FeZ4tljT4AmYDuwCpgFTAZGAaPd59nu2Hb33af9/O5P4DQwJXYRpLAWeF+mYI/cc6RuEOcogD3A4zLneQusoYoZARwqc/VeARYNwXntENVa5m454GKrKuzwcqGPojwepnF9KdDRRwzn3DBYFYxxs5zQ7Gefa9ZwYc/VCPQG4rk4zLFE40wg+S5geeRpdlcgrlNkTmMg6efAnNiBAXOBF4H49pIpK4EfXrIv3GpcCrXASy/G3hwXkROB116iH4D5yKMe6PZi7QQmkBHHA9PLdchlfWA6foRMmBfYkzqGfE4ENiglPOsGzXkvsTduCJPOJOCdF7vd3kmamsDdsZl02Ba4S6aTMAe9hF66hWEqjAFeeTnsJ2GeecnYlXjqF1UHiTI3MLMazI5tLGa52P/OxW7xJ8cWL4mHpEuHl8smEqTJS+Iw6XLUy+UkCXLbS2ID6bLRy8XKzMnR6SWxgHRZGJgtisUKOVvdVdNTRiLN1Xpc7lskiFp2kdQuoChGiLXFXDiOBR4IKIIRZvdjLX4bBCRvhNrOGA3xh6pWJ/BUGzWBt1juxQjkqxfETKqXmV4tShIaUo13xx/qJDSkzQviapW+WV4LXPNqcTdGILsEPDyNUNsRoyF2aqdrEP5pRntMzce+tX5HwBVphJgdqqYRmZFu8+164EFfDfbF/Ttrs4StE0VRFEVRFEUihfs/eslZi3v7PBX/rLDF+BiY139yx6T7Z0dzmcXW5QT8s6PUz+pXun92lPp5k0O6f3a0lCnIpQT8s6PePUD9YnT/50vZsf2zpHAP0C/OLg2wGLH9FUVRFEVRFEVRFOF6RaF6ST56R5GbXhJbr2hWvUSWXlFSvSQvvaOUm14SW69oUb1Ell5Rr3qJPL2iUL1EURRFURRFURRlaImtNxSJ+1eU2HpDkbh/xYmtNzQn7l9xYusNpcT9K05svaGUuH/Fia03tCTuX3Fi6w31ifsPCbH1hiJx/3/4DWMCTZ+TD9u/AAAAAElFTkSuQmCC"/>
-                                        </defs>
-                                        </svg>
-                                        
-                                        
-                                </div>
-                                <div class="information__about-text">
-                                   <span class="">Раздельные туалет и душевые в каждом блоке</span> 
-                                </div>
-                                <div class="information__about-text">
-                                   <span class="">Душевая на цокольном этаже</span> 
-                                </div>
-                                <div class="information__about-text">
-                                    <span class="">Раздельные туалет и душевые в каждой квартире</span> 
-                                </div>
-                                
-                                <div class="information__about-text">
-                                  <span class="">Раздельные туалет и душевые в каждом блоке</span> 
-                                </div>
-                                <div class="information__icon">
-                                    <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <rect width="74" height="74" fill="url(#pattern2)"/>
-                                        <defs>
-                                        <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                        <use xlink:href="#image0_1047_336" transform="scale(0.01)"/>
-                                        </pattern>
-                                        <image id="image0_1047_336" width="100" height="100" xlink:href="data:image/png;base64,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"/>
-                                        </defs>
-                                        </svg>
-                                                                               
-                                        
-                                </div>
-                                
-                                <div class="information__about-text">
-                                    <span class="">По две команты на блок</span> 
-                                </div>
-                                <div class="information__about-text">
-                                    <span class="information__about-text_bold">—</span>
-                                </div>
-                                <div class="information__about-text">
-                                    <span class="">Рассчитаны на 3, 5 и 7 человек</span> 
-                                </div>
-                                
-                                <div class="information__about-text">
-                                   <span class="">Комнаты на двоих и одного</span> 
-                                </div>
-                                <div class="information__about-text">
-                                   <span class="">Комнаты на двоих и одного</span> 
-                                </div>
+                            <div class="information__header-block">
+                                Блочный тип
                             </div>
-                        
-                    </div>
-
-                <div id="card-rules" class="information rules">
-                    <div class="information-rules__wrapper">
-                        <div class="information-rules__ejectment information-rules__main information-rules__main_active">
-                            <h3 class="information-rules__title information-rules__ejectment-title">Ты можешь выселиться <span class="left"></span><span class="right"></span></h3>
-                            <div class="information-rules__text information-rules__ejectment-text">
-                                <p class="information-rules__ejectment-text-application">
-                                    Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
-                                </p>
-                                <ul class="information-rules__ejectment-text-application-list">
-                                    <li class="information-rules__ejectment-text-application-list-element">
-                                        в электронном виде через 
-                                        <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__ejectment-text-application-list-element-link">
-                                            личный кабинет обучающегося;
-                                        </a>
-                                    </li>
-                                    <li class="information-rules__ejectment-text-application-list-element">
-                                        предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__ejectment-text-application-list-element-link">
-                                            управление студенческим городком.
-                                        </a>
-                                    </li>
-                                </ul>
-                                <p class="information-rules__ejectment-text-timescales">
-                                    Освободить жилое помещение ты должен в указанные сроки:
-                                </p>
-                                <ul class="information-rules__ejectment-text-timescales-list">
-                                    <li class="information-rules__ejectment-text-timescales-list-element">
-                                        при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
-                                    </li>
-                                    <li class="information-rules__ejectment-text-timescales-list-element">
-                                        при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
-                                    </li>
-                                </ul>
+                            <div class="information__header-corridor">
+                                Коридорный тип
+                            </div>
+                            <div class="information__header-flat">
+                                Квартирный тип
+                            </div>
+                            <div class="information__header-comfort">
+                                КПК
                             </div>
                         </div>
-                        <div class="information-rules__main information-rules__migration">
-                            <h3 class="information-rules__title information-rules__migration-title">Переселение <span class="left"></span><span class="right"></span></h3>
-                            <div class="information-rules__text information-rules__migration-text">
-                                <p class="information-rules__migration-text-application">
-                                    Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
-                                </p>
-                                <ul class="information-rules__migration-text-application-list">
-                                    <li class="information-rules__migration-text-application-list-element">
-                                        в электронном виде через 
-                                        <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__migration-text-application-list-element-link">
-                                            личный кабинет обучающегося;
-                                        </a>
-                                    </li>
-                                    <li class="information-rules__migration-text-application-list-element">
-                                        предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__migration-text-application-list-element-link">
-                                            управление студенческим городком.
-                                        </a>
-                                    </li>
-                                </ul>
-                                <p class="information-rules__migration-text-timescales">
-                                    Освободить жилое помещение ты должен в указанные сроки:
-                                </p>
-                                <ul class="information-rules__migration-text-timescales-list">
-                                    <li class="information-rules__migration-text-timescales-list-element">
-                                        при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
-                                    </li>
-                                    <li class="information-rules__migration-text-timescales-list-element">
-                                        при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="information-rules__main information-rules__concession">
-                            <h3 class="information-rules__title information-rules__concession-title">Льготное проживание <span class="left"></span><span class="right"></span></h3>
-                            <div class="information-rules__text information-rules__concession-text">
-                                <p class="information-rules__concession-text-application">
-                                    Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
-                                </p>
-                                <ul class="information-rules__concession-text-application-list">
-                                    <li class="information-rules__concession-text-application-list-element">
-                                        в электронном виде через 
-                                        <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__concession-text-application-list-element-link">
-                                            личный кабинет обучающегося;
-                                        </a>
-                                    </li>
-                                    <li class="information-rules__concession-text-application-list-element">
-                                        предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__concession-text-application-list-element-link">
-                                            управление студенческим городком.
-                                        </a>
-                                    </li>
-                                </ul>
-                                <p class="information-rules__concession-text-timescales">
-                                    Освободить жилое помещение ты должен в указанные сроки:
-                                </p>
-                                <ul class="information-rules__concession-text-timescales-list">
-                                    <li class="information-rules__concession-text-timescales-list-element">
-                                        при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
-                                    </li>
-                                    <li class="information-rules__concession-text-timescales-list-element">
-                                        при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="information-rules__main information-rules__temporary">
-                            <h3 class="information-rules__title information-rules__temporary-title">Временная регистрация <span class="left"></span><span class="right"></span></h3>
-                            <div class="information-rules__text information-rules__temporary-text">
-                                <p class="information-rules__temporary-text-application">
-                                    Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
-                                </p>
-                                <ul class="information-rules__temporary-text-application-list">
-                                    <li class="information-rules__temporary-text-application-list-element">
-                                        в электронном виде через 
-                                        <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__temporary-text-application-list-element-link">
-                                            личный кабинет обучающегося;
-                                        </a>
-                                    </li>
-                                    <li class="information-rules__temporary-text-application-list-element">
-                                        предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__temporary-text-application-list-element-link">
-                                            управление студенческим городком.
-                                        </a>
-                                    </li>
-                                </ul>
-                                <p class="information-rules__temporary-text-timescales">
-                                    Освободить жилое помещение ты должен в указанные сроки:
-                                </p>
-                                <ul class="information-rules__temporary-text-timescales-list">
-                                    <li class="information-rules__temporary-text-timescales-list-element">
-                                        при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
-                                    </li>
-                                    <li class="information-rules__temporary-text-timescales-list-element">
-                                        при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div id="card-residence" class="information residence">
-                    <div class="information-residence__wrapper">
-                        <div class="information-residence__subtext">
-                            <span class="information-residence__subtext-quest">Ты хочешь заселиться?</span>
-                            <span class="information-residence__subtext-about">
-                                Мы подготовили для тебя информацию, которую должен знать каждый,
-                                кто хочет попасть в общежитие
-                            </span>
+                        <div class="information__about">
+                            <div class="information__icon">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="74" height="74" fill="url(#pattern0)"/>
+                                    <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1047_334" transform="scale(0.01)"/>
+                                    </pattern>
+                                    <image id="image0_1047_334" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEGklEQVR4nO2dS48NQRSAPwtMRCJYmTHYyCBhjfgBrIV4rMVzIYT/Iv6AYcYk2GDLGMYjXiEkRFgZr5mxkpGWuimJlO6eW9PVt09XnS85qzlT91R/XXXr3tvdBYqiKIoii43AKDADZAuMGWAYGBBWX5111YLp7NcKIjInpgJ3PlR9oeuqjdGAMjIbl4TWF7Ku2qgyTWUF8UNofSHr8mYJcAqYAH7WcNCzyMIco3vASXvsgtIPPBbQyayl8QhYE0qGsasyqCzlYaiRckrAGZZFEidCCJlwGr1mpzClHLMkvu4cu3ECMOs02oq1txDWOsfOrPAq4w47peHjp0JaKGQQGLFD0sQYMFTSprR8X3za77mQwYLvhr7Zv0nP98W3/Z4LGSlZ5l1uQb4vvu33XEjZd0PTLcj3xbd9UUJ+tCDfF9/2ey5krKTA4Rbk++Lbfs+FDNk3NDfvi/1gJD3fF9/2ey4Eu7q4bOfQaXumlHVeWr4vPu03IkQpRoUIQ4UIQ4UIozEhWeJRhApBheSeCalFETpCUCH1nAnCad0IiZ1MhchChQhDhQhDhQhDhQhDhQhDhQhDhQhDhQhDhQhDhQhDhQgjWSHbgLP2/vKX9pqouS6+Yp+zuS/s9bhngK0B60pKSB9wHHhWw28bT4GjwNKKNSYj5ADwqQc/Mn0E9leoM3ohK4GrPRDhhpnOVgg+Lo288AbgTclBy7tBxrfusgfOvAbWe9YcrZANJVPUBLDPzvdVhSy1bd0vmcLWpy5kZcHI+AwcAhZVaL8o37R52L6Gm/PKY/qKUkjee8aDQPfqzZe/DpjMybuSqpCDBVPU8kDtd5O/DLiTk7s3UPsLqbuRF+7Led94A6wK1L5P/mrgrZP7oYsHxUQl5JiT+xvYOc//vP8n/10Xdfvk77I1/FvTkZSEuJ/AL3RRxx67EjKxu4b8i05NT1IRsi1ndJgHUzbNUM4o2ZKCkLNO3i3kcNup7XQKQtyngp5DDuc9lsDRCHnp5G1HDjuc2p6nIOS74AeiDebcex69kF9OnvlMIoU+pzZTa/RC3KcghHyOVVU2O7WZWqMXctPJM19dbEKGjLtObabWaISkFkWoEFRI7pmQWhShIwQVUs+ZIJzWjZDYyVSILFSIMFSIMFSIMFonJLUoQoWgQnLPhNSiCB0hqBBF4ghR8lEhwlAhsQuZEXyVSJLb5rkbS5rNElVKdzJu1LGx5EkBa/wskjBX/Vdmid3tuOnOZC0Pc2fYYgLRb3c7brpTWUtjMuT23X9ZbHc7Hs/ZH1eD/47BrL3O61jIkeGDW1DVvKaIpR/RdCSLpB+dzbF8p64Q+wqGJpZ+dHYq8+3IJeQxHEk/Oh8Wpzw6MWVXb9IYiKQfHfrt2VI27KdtjthOEE8/FEVRFNLhDxutVO4k/wUrAAAAAElFTkSuQmCC"/>
+                                    </defs>
+                                    </svg>   
+                            </div>
+
+                            <div class="information__about-text">
+                                <span class="">Кухня на каждом этаже</span> 
+                             </div>
+                             <div class="information__about-text">
+                                <span class="">Кухня на каждом этаже</span> 
+                             </div>
+                             <div class="information__about-text">
+                                <span class="">Кухня на каждой квартире</span> 
+                             </div>
+                             
+                            <div class="information__about-text">
+                               <span class="">Кухня на каждом этаже</span> 
+                            </div>
+                            <div class="information__icon">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="74" height="74" fill="url(#pattern1)"/>
+                                    <defs>
+                                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1047_335" transform="scale(0.01)"/>
+                                    </pattern>
+                                    <image id="image0_1047_335" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1UlEQVR4nO2byWsUQRSHP1dwQRAXYkwrKpK7iAu4gojgPyCI4AYq0atL9C9QVDwIAVfwohKIxoMXFUE0cQuoRxHjmoNR43jSqCUFJUhZmRgySb2qeR88GOh502/prq6qXw+kh/FsoMcVbUjeGL1DZGG0IbIw2hBZGG2ILIw2RBZGGyILow2RhdGGyMJoQ2RhtCGyMNoQWRhtiCyMNkQWRhsiC6MNkYXRhshgPLA60JDPfXz+Y9ZnXOzgc2EGsBu4BXwLFPt/zfreBBqAmthJpcgKoBn4Pogm9GX2Ny8Dy2InmQJL3N1ghsluAItjJy2RqcBZ4FeZ4tljT4AmYDuwCpgFTAZGAaPd59nu2Hb33af9/O5P4DQwJXYRpLAWeF+mYI/cc6RuEOcogD3A4zLneQusoYoZARwqc/VeARYNwXntENVa5m454GKrKuzwcqGPojwepnF9KdDRRwzn3DBYFYxxs5zQ7Gefa9ZwYc/VCPQG4rk4zLFE40wg+S5geeRpdlcgrlNkTmMg6efAnNiBAXOBF4H49pIpK4EfXrIv3GpcCrXASy/G3hwXkROB116iH4D5yKMe6PZi7QQmkBHHA9PLdchlfWA6foRMmBfYkzqGfE4ENiglPOsGzXkvsTduCJPOJOCdF7vd3kmamsDdsZl02Ba4S6aTMAe9hF66hWEqjAFeeTnsJ2GeecnYlXjqF1UHiTI3MLMazI5tLGa52P/OxW7xJ8cWL4mHpEuHl8smEqTJS+Iw6XLUy+UkCXLbS2ID6bLRy8XKzMnR6SWxgHRZGJgtisUKOVvdVdNTRiLN1Xpc7lskiFp2kdQuoChGiLXFXDiOBR4IKIIRZvdjLX4bBCRvhNrOGA3xh6pWJ/BUGzWBt1juxQjkqxfETKqXmV4tShIaUo13xx/qJDSkzQviapW+WV4LXPNqcTdGILsEPDyNUNsRoyF2aqdrEP5pRntMzce+tX5HwBVphJgdqqYRmZFu8+164EFfDfbF/Ttrs4StE0VRFEVRFEUihfs/eslZi3v7PBX/rLDF+BiY139yx6T7Z0dzmcXW5QT8s6PUz+pXun92lPp5k0O6f3a0lCnIpQT8s6PePUD9YnT/50vZsf2zpHAP0C/OLg2wGLH9FUVRFEVRFEVRFOF6RaF6ST56R5GbXhJbr2hWvUSWXlFSvSQvvaOUm14SW69oUb1Ell5Rr3qJPL2iUL1EURRFURRFURRlaImtNxSJ+1eU2HpDkbh/xYmtNzQn7l9xYusNpcT9K05svaGUuH/Fia03tCTuX3Fi6w31ifsPCbH1hiJx/3/4DWMCTZ+TD9u/AAAAAElFTkSuQmCC"/>
+                                    </defs>
+                                    </svg>
+                                    
+                                    
+                            </div>
+                            <div class="information__about-text">
+                               <span class="">Раздельные туалет и душевые в каждом блоке</span> 
+                            </div>
+                            <div class="information__about-text">
+                               <span class="">Душевая на цокольном этаже</span> 
+                            </div>
+                            <div class="information__about-text">
+                                <span class="">Раздельные туалет и душевые в каждой квартире</span> 
+                            </div>
+                            
+                            <div class="information__about-text">
+                              <span class="">Раздельные туалет и душевые в каждом блоке</span> 
+                            </div>
+                            <div class="information__icon">
+                                <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="74" height="74" fill="url(#pattern2)"/>
+                                    <defs>
+                                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_1047_336" transform="scale(0.01)"/>
+                                    </pattern>
+                                    <image id="image0_1047_336" width="100" height="100" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                    </svg>
+                                                                           
+                                    
+                            </div>
+                            
+                            <div class="information__about-text">
+                                <span class="">По две команты на блок</span> 
+                            </div>
+                            <div class="information__about-text">
+                                <span class="information__about-text_bold">—</span>
+                            </div>
+                            <div class="information__about-text">
+                                <span class="">Рассчитаны на 3, 5 и 7 человек</span> 
+                            </div>
+                            
+                            <div class="information__about-text">
+                               <span class="">Комнаты на двоих и одного</span> 
+                            </div>
+                            <div class="information__about-text">
+                               <span class="">Комнаты на двоих и одного</span> 
+                            </div>
                         </div>
-                        <div class="information-residence__responsibilities">
-                            <h3 class="information-residence__responsibilities-title">У тебя есть обязанности!</h3>
-                            <ul class="information-residence__responsibilities-list">
-                                <li class="information-residence__responsibilities-list-text">
-                                Своевременная оплата общежития каждый месяц с 1 по 10 число (не затягивай с этим). 
-                                    Общежитие можно оплатить в личном кабинете по qr-коду или заполнить квитанцию.
+                    
+            </div>
+
+            <div id="card-rules" class="information rules">
+                <div class="information-rules__wrapper">
+                    <div class="information-rules__ejectment information-rules__main information-rules__main_active">
+                        <h3 class="information-rules__title information-rules__ejectment-title">Ты можешь выселиться <span class="left"></span><span class="right"></span></h3>
+                        <div class="information-rules__text information-rules__ejectment-text">
+                            <p class="information-rules__ejectment-text-application">
+                                Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
+                            </p>
+                            <ul class="information-rules__ejectment-text-application-list">
+                                <li class="information-rules__ejectment-text-application-list-element">
+                                    в электронном виде через 
+                                    <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__ejectment-text-application-list-element-link">
+                                        личный кабинет обучающегося;
+                                    </a>
                                 </li>
-                                <li class="information-residence__responsibilities-list-text">
-                                    Соблюдение правил внутреннего порядка и дисциплины 
-                                    (убирай за собой, вовремя выноси мусор и не оставляй грязную посуду; 
-                                    не шуми и уважай соседей, тогда время проживания в общежитии будет для тебя максимально комфортным)
+                                <li class="information-rules__ejectment-text-application-list-element">
+                                    предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__ejectment-text-application-list-element-link">
+                                        управление студенческим городком.
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="information-rules__ejectment-text-timescales">
+                                Освободить жилое помещение ты должен в указанные сроки:
+                            </p>
+                            <ul class="information-rules__ejectment-text-timescales-list">
+                                <li class="information-rules__ejectment-text-timescales-list-element">
+                                    при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
+                                </li>
+                                <li class="information-rules__ejectment-text-timescales-list-element">
+                                    при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
                                 </li>
                             </ul>
                         </div>
-                         <p class="information-residence__rules">Обязательно ознакомься с правилами общежитий в разделе
-                            <a target="_blank" href="https://mospolytech.ru/upload/medialibrary/c01/Pravila-vnutrennego-rasporyadka-v-studencheskom-gorodke-Moskovskogo-Polytecha-(23092022).pdf" class="information-residence__rules-link">«Общежития»</a>
-                        </p>
+                    </div>
+                    <div class="information-rules__main information-rules__migration">
+                        <h3 class="information-rules__title information-rules__migration-title">Переселение <span class="left"></span><span class="right"></span></h3>
+                        <div class="information-rules__text information-rules__migration-text">
+                            <p class="information-rules__migration-text-application">
+                                Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
+                            </p>
+                            <ul class="information-rules__migration-text-application-list">
+                                <li class="information-rules__migration-text-application-list-element">
+                                    в электронном виде через 
+                                    <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__migration-text-application-list-element-link">
+                                        личный кабинет обучающегося;
+                                    </a>
+                                </li>
+                                <li class="information-rules__migration-text-application-list-element">
+                                    предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__migration-text-application-list-element-link">
+                                        управление студенческим городком.
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="information-rules__migration-text-timescales">
+                                Освободить жилое помещение ты должен в указанные сроки:
+                            </p>
+                            <ul class="information-rules__migration-text-timescales-list">
+                                <li class="information-rules__migration-text-timescales-list-element">
+                                    при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
+                                </li>
+                                <li class="information-rules__migration-text-timescales-list-element">
+                                    при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="information-rules__main information-rules__concession">
+                        <h3 class="information-rules__title information-rules__concession-title">Льготное проживание <span class="left"></span><span class="right"></span></h3>
+                        <div class="information-rules__text information-rules__concession-text">
+                            <p class="information-rules__concession-text-application">
+                                Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
+                            </p>
+                            <ul class="information-rules__concession-text-application-list">
+                                <li class="information-rules__concession-text-application-list-element">
+                                    в электронном виде через 
+                                    <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__concession-text-application-list-element-link">
+                                        личный кабинет обучающегося;
+                                    </a>
+                                </li>
+                                <li class="information-rules__concession-text-application-list-element">
+                                    предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__concession-text-application-list-element-link">
+                                        управление студенческим городком.
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="information-rules__concession-text-timescales">
+                                Освободить жилое помещение ты должен в указанные сроки:
+                            </p>
+                            <ul class="information-rules__concession-text-timescales-list">
+                                <li class="information-rules__concession-text-timescales-list-element">
+                                    при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
+                                </li>
+                                <li class="information-rules__concession-text-timescales-list-element">
+                                    при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="information-rules__main information-rules__temporary">
+                        <h3 class="information-rules__title information-rules__temporary-title">Временная регистрация <span class="left"></span><span class="right"></span></h3>
+                        <div class="information-rules__text information-rules__temporary-text">
+                            <p class="information-rules__temporary-text-application">
+                                Подать заявление о расторжении договора найма можно одним из предложенных вариантов:
+                            </p>
+                            <ul class="information-rules__temporary-text-application-list">
+                                <li class="information-rules__temporary-text-application-list-element">
+                                    в электронном виде через 
+                                    <a target="_blank" href="https://e.mospolytech.ru/#/home" class="information-rules__temporary-text-application-list-element-link">
+                                        личный кабинет обучающегося;
+                                    </a>
+                                </li>
+                                <li class="information-rules__temporary-text-application-list-element">
+                                    предоставить лично в <a target="_blank" href="https://mospolytech.ru/obschejitiya/" class="information-rules__temporary-text-application-list-element-link">
+                                        управление студенческим городком.
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="information-rules__temporary-text-timescales">
+                                Освободить жилое помещение ты должен в указанные сроки:
+                            </p>
+                            <ul class="information-rules__temporary-text-timescales-list">
+                                <li class="information-rules__temporary-text-timescales-list-element">
+                                    при расторжении договора найма по соглашению Сторон или истечения срока его действия — в день расторжения;
+                                </li>
+                                <li class="information-rules__temporary-text-timescales-list-element">
+                                    при отчисления из университета по любой причине — в течение 3-х рабочих дней с момента выхода приказа ректора университета об отчислении.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-               
+            </div>
 
-        </div>      
+            <div id="card-residence" class="information residence">
+                <div class="information-residence__wrapper">
+                    <div class="information-residence__subtext">
+                        <span class="information-residence__subtext-quest">Ты хочешь заселиться?</span>
+                        <span class="information-residence__subtext-about">
+                            Мы подготовили для тебя информацию, которую должен знать каждый,
+                            кто хочет попасть в общежитие
+                        </span>
+                    </div>
+                    <div class="information-residence__responsibilities">
+                        <h3 class="information-residence__responsibilities-title">У тебя есть обязанности!</h3>
+                        <ul class="information-residence__responsibilities-list">
+                            <li class="information-residence__responsibilities-list-text">
+                            Своевременная оплата общежития каждый месяц с 1 по 10 число (не затягивай с этим). 
+                                Общежитие можно оплатить в личном кабинете по qr-коду или заполнить квитанцию.
+                            </li>
+                            <li class="information-residence__responsibilities-list-text">
+                                Соблюдение правил внутреннего порядка и дисциплины 
+                                (убирай за собой, вовремя выноси мусор и не оставляй грязную посуду; 
+                                не шуми и уважай соседей, тогда время проживания в общежитии будет для тебя максимально комфортным)
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="information-residence__rules">Обязательно ознакомься с правилами общежитий в разделе
+                        <a target="_blank" href="https://mospolytech.ru/upload/medialibrary/c01/Pravila-vnutrennego-rasporyadka-v-studencheskom-gorodke-Moskovskogo-Polytecha-(23092022).pdf" class="information-residence__rules-link">«Общежития»</a>
+                    </p>
+            </div>
+        </div>  
     </div>
     </main>
 
