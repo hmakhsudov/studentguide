@@ -439,7 +439,7 @@ img {
   padding: 48px 56px;
   text-align: center;
 }
-.header__navigation-information {
+.header__navigation-info {
   background-color: rgb(135, 75, 160);
   border-top-left-radius: 50px;
   color: #FFFFFF;
@@ -482,14 +482,14 @@ img {
   padding: 350px 182px 555px 182px;
 }
 
-.main__header {
+.info__header {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.main__title {
+.info__title {
   font-family: "Verdana", sans-serif;
   font-weight: 700;
   color: rgb(30, 30, 30);
@@ -498,7 +498,7 @@ img {
   margin-bottom: 118px;
 }
 
-.information-select {
+.info-select {
   font-family: "Verdana", sans-serif;
   font-weight: 400;
   cursor: pointer;
@@ -510,30 +510,30 @@ img {
   justify-content: center;
   margin-bottom: 95px;
 }
-.information-select__card.dormitory-types {
+.info-select__card.dormitory-types {
   background: #FFFFFF;
   padding: 53px 35px;
 }
-.information-select__card.rules {
+.info-select__card.rules {
   background: #FFFFFF;
   padding: 53px 80px;
 }
-.information-select__card.residence {
+.info-select__card.residence {
   background: #FFFFFF;
   padding: 53px 80px;
 }
-.information-select__card.is-active {
+.info-select__card.is-active {
   background: rgb(75, 110, 185);
   color: #FFFFFF;
 }
 
-.information {
+.info {
   display: none;
 }
-.information.is-active {
+.info.is-active {
   display: block;
 }
-.information__headers {
+.info__headers {
   display: grid;
   justify-content: center;
   text-align: center;
@@ -547,10 +547,10 @@ img {
   line-height: 35px;
   margin-bottom: 11px;
 }
-.information__headers .information__header-none {
+.info__headers .info__header-none {
   visibility: hidden;
 }
-.information__headers .information__header-corridor {
+.info__headers .info__header-corridor {
   background-color: rgb(75, 110, 185);
   display: flex;
   justify-content: center;
@@ -558,7 +558,7 @@ img {
   text-align: center;
   padding: 5px 5px;
 }
-.information__headers .information__header-block {
+.info__headers .info__header-block {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -566,7 +566,7 @@ img {
   background-color: rgb(75, 110, 185);
   padding: 5px 5px;
 }
-.information__headers .information__header-flat {
+.info__headers .info__header-flat {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -574,7 +574,7 @@ img {
   background-color: rgb(75, 110, 185);
   padding: 5px 5px;
 }
-.information__headers .information__header-comfort {
+.info__headers .info__header-comfort {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -582,7 +582,7 @@ img {
   background-color: rgb(75, 110, 185);
   padding: 5px 5px;
 }
-.information__about {
+.info__about {
   text-align: center;
   display: grid;
   justify-content: center;
@@ -591,7 +591,7 @@ img {
   grid-column-gap: 10px;
   grid-row-gap: 8px;
 }
-.information__about-text {
+.info__about-text {
   height: 147px;
   display: flex;
   align-items: center;
@@ -605,24 +605,24 @@ img {
   color: #000000;
   padding: 25px 11px;
 }
-.information__about-text:nth-child(5n+1) {
+.info__about-text:nth-child(5n+1) {
   visibility: hidden;
 }
-.information__about-text_bold {
+.info__about-text_bold {
   font-family: "Verdana", sans-serif;
   font-weight: 700;
 }
-.information__icon {
+.info__icon {
   margin-top: 30px;
 }
-.information.rules.is-active {
+.info.rules.is-active {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.information.rules .information-rules__wrapper {
+.info.rules .info-rules__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -630,14 +630,14 @@ img {
   text-align: center;
   width: 855px;
 }
-.information.rules .information-rules__ejectment {
+.info.rules .info-rules__ejectment {
   width: 855px;
   text-align: center;
   border-radius: 100px 0px 0px 0px;
   background: rgb(124, 81, 161);
   padding: 42px 47px 48px 84px;
 }
-.information.rules .information-rules__ejectment-title {
+.info.rules .info-rules__ejectment-title {
   display: block;
   position: relative;
   cursor: pointer;
@@ -648,32 +648,32 @@ img {
   line-height: 53px;
   color: #FFFFFF;
 }
-.information.rules .information-rules__ejectment-title span {
+.info.rules .info-rules__ejectment-title span {
   background-color: #FFFFFF;
 }
-.information.rules .information-rules__ejectment-text {
+.info.rules .info-rules__ejectment-text {
   color: #FFFFFF;
 }
-.information.rules .information-rules__ejectment-text-application {
+.info.rules .info-rules__ejectment-text-application {
   margin-bottom: 30px;
 }
-.information.rules .information-rules__ejectment-text-application-list {
+.info.rules .info-rules__ejectment-text-application-list {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.information.rules .information-rules__ejectment-text-application-list-element-link {
+.info.rules .info-rules__ejectment-text-application-list-element-link {
   color: #FFFFFF;
 }
-.information.rules .information-rules__ejectment-text-timescales-list {
+.info.rules .info-rules__ejectment-text-timescales-list {
   margin-left: 30px;
 }
-.information.rules .information-rules__migration {
+.info.rules .info-rules__migration {
   width: 855px;
   text-align: center;
   padding: 42px 47px 48px 84px;
   background: #FFFFFF;
 }
-.information.rules .information-rules__migration-title {
+.info.rules .info-rules__migration-title {
   display: block;
   font-family: "Verdana", sans-serif;
   font-weight: 700;
@@ -684,32 +684,32 @@ img {
   position: relative;
   cursor: pointer;
 }
-.information.rules .information-rules__migration-title span {
+.info.rules .info-rules__migration-title span {
   background-color: #000000;
 }
-.information.rules .information-rules__migration-text {
+.info.rules .info-rules__migration-text {
   color: #000000;
 }
-.information.rules .information-rules__migration-text-application {
+.info.rules .info-rules__migration-text-application {
   margin-bottom: 30px;
 }
-.information.rules .information-rules__migration-text-application-list {
+.info.rules .info-rules__migration-text-application-list {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.information.rules .information-rules__migration-text-application-list-element-link {
+.info.rules .info-rules__migration-text-application-list-element-link {
   color: #000000;
 }
-.information.rules .information-rules__migration-text-timescales-list {
+.info.rules .info-rules__migration-text-timescales-list {
   margin-left: 30px;
 }
-.information.rules .information-rules__concession {
+.info.rules .info-rules__concession {
   width: 855px;
   padding: 42px 47px 48px 84px;
   text-align: center;
   background: #1E1E1E;
 }
-.information.rules .information-rules__concession-title {
+.info.rules .info-rules__concession-title {
   display: block;
   text-align: left;
   font-family: "Verdana", sans-serif;
@@ -719,33 +719,33 @@ img {
   color: #FFFFFF;
   cursor: pointer;
 }
-.information.rules .information-rules__concession-title span {
+.info.rules .info-rules__concession-title span {
   background-color: #FFFFFF;
 }
-.information.rules .information-rules__concession-text {
+.info.rules .info-rules__concession-text {
   color: #FFFFFF;
 }
-.information.rules .information-rules__concession-text-application {
+.info.rules .info-rules__concession-text-application {
   margin-bottom: 30px;
 }
-.information.rules .information-rules__concession-text-application-list {
+.info.rules .info-rules__concession-text-application-list {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.information.rules .information-rules__concession-text-application-list-element-link {
+.info.rules .info-rules__concession-text-application-list-element-link {
   color: #FFFFFF;
 }
-.information.rules .information-rules__concession-text-timescales-list {
+.info.rules .info-rules__concession-text-timescales-list {
   margin-left: 30px;
 }
-.information.rules .information-rules__temporary {
+.info.rules .info-rules__temporary {
   width: 855px;
   text-align: center;
   padding: 42px 47px 48px 84px;
   background: rgb(75, 110, 185);
   border-radius: 0px 0px 100px 0px;
 }
-.information.rules .information-rules__temporary-title {
+.info.rules .info-rules__temporary-title {
   display: block;
   font-family: "Verdana", sans-serif;
   font-weight: 700;
@@ -755,34 +755,34 @@ img {
   color: #FFFFFF;
   cursor: pointer;
 }
-.information.rules .information-rules__temporary-title span {
+.info.rules .info-rules__temporary-title span {
   background-color: #FFFFFF;
 }
-.information.rules .information-rules__temporary-text {
+.info.rules .info-rules__temporary-text {
   color: #FFFFFF;
 }
-.information.rules .information-rules__temporary-text-application {
+.info.rules .info-rules__temporary-text-application {
   margin-bottom: 30px;
 }
-.information.rules .information-rules__temporary-text-application-list {
+.info.rules .info-rules__temporary-text-application-list {
   margin-left: 30px;
   margin-bottom: 30px;
 }
-.information.rules .information-rules__temporary-text-application-list-element-link {
+.info.rules .info-rules__temporary-text-application-list-element-link {
   color: #FFFFFF;
 }
-.information.rules .information-rules__temporary-text-timescales-list {
+.info.rules .info-rules__temporary-text-timescales-list {
   margin-left: 30px;
 }
-.information.rules .information-rules__title {
+.info.rules .info-rules__title {
   transition: 0.4s ease-in-out;
   position: relative;
 }
-.information.rules .information-rules__title span {
+.info.rules .info-rules__title span {
   bottom: 40%;
   transition: 0.4s ease-in-out;
 }
-.information.rules .information-rules__title .left {
+.info.rules .info-rules__title .left {
   rotate: 50deg;
   height: 3px;
   width: 40px;
@@ -791,7 +791,7 @@ img {
   margin-left: auto;
   display: block;
 }
-.information.rules .information-rules__title .right {
+.info.rules .info-rules__title .right {
   rotate: -50deg;
   height: 3px;
   width: 40px;
@@ -800,7 +800,7 @@ img {
   margin-left: auto;
   display: block;
 }
-.information.rules .information-rules__text {
+.info.rules .info-rules__text {
   text-align: left;
   font-family: "Verdana", sans-serif;
   font-weight: 400;
@@ -810,34 +810,34 @@ img {
   overflow: hidden;
   transition: 0.4s ease-in-out;
 }
-.information .information-rules__main_active .information-rules__text {
+.info .info-rules__main_active .info-rules__text {
   max-height: 1080px;
   overflow: visible;
 }
-.information .information-rules__main_active .information-rules__title {
+.info .info-rules__main_active .info-rules__title {
   margin-bottom: 10px;
   margin-left: 45px;
 }
-.information .information-rules__main_active .information-rules__title .left {
+.info .info-rules__main_active .info-rules__title .left {
   right: 0;
   rotate: 135deg;
 }
-.information .information-rules__main_active .information-rules__title .right {
+.info .info-rules__main_active .info-rules__title .right {
   rotate: -135deg;
 }
-.information.residence .information-residence__wrapper {
+.info.residence .info-residence__wrapper {
   text-align: center;
   background: #FFFFFF;
   border-radius: 100px 0;
   padding: 53px 39px 74px 39px;
 }
-.information.residence .information-residence__subtext {
+.info.residence .info-residence__subtext {
   display: flex;
   align-items: center;
   text-align: center;
   margin-bottom: 41px;
 }
-.information.residence .information-residence__subtext-quest {
+.info.residence .info-residence__subtext-quest {
   width: 50%;
   font-family: "Verdana", sans-serif;
   font-weight: 700;
@@ -845,20 +845,20 @@ img {
   line-height: 29px;
   margin-right: 10px;
 }
-.information.residence .information-residence__subtext-about {
+.info.residence .info-residence__subtext-about {
   text-align: left;
   font-family: "Verdana", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 }
-.information.residence .information-residence__responsibilities {
+.info.residence .info-residence__responsibilities {
   background: rgb(124, 81, 161);
   padding: 59px 55px;
   border-radius: 100px 0px;
   margin-bottom: 29px;
 }
-.information.residence .information-residence__responsibilities-title {
+.info.residence .info-residence__responsibilities-title {
   font-family: "Verdana", sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -866,7 +866,7 @@ img {
   color: #FFFFFF;
   margin-bottom: 42px;
 }
-.information.residence .information-residence__responsibilities-list {
+.info.residence .info-residence__responsibilities-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -878,11 +878,11 @@ img {
   line-height: 24px;
   color: #FFFFFF;
 }
-.information.residence .information-residence__responsibilities-list-text {
+.info.residence .info-residence__responsibilities-list-text {
   text-align: left;
   margin-bottom: 20px;
 }
-.information.residence .information-residence__rules {
+.info.residence .info-residence__rules {
   font-family: "Verdana", sans-serif;
   font-weight: 400;
   color: rgb(30, 30, 30);
@@ -891,7 +891,7 @@ img {
   line-height: 29px;
   text-align: center;
 }
-.information.residence .information-residence__rules-link {
+.info.residence .info-residence__rules-link {
   color: rgb(30, 30, 30);
 }
 
