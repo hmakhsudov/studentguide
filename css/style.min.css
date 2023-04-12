@@ -434,6 +434,10 @@ img {
   color: #FFFFFF;
   text-align: center;
 }
+.header__navigation-btn.is-active {
+  background-color: rgb(75, 110, 185);
+  color: #FFFFFF;
+}
 .header__navigation-btn {
   background-color: #FFFFFF;
   padding: 48px 56px;
@@ -527,10 +531,10 @@ img {
   color: #FFFFFF;
 }
 
-.info {
+.main-section {
   display: none;
 }
-.info.is-active {
+.main-section.is-active {
   display: block;
 }
 .info__headers {

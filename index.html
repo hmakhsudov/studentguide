@@ -27,6 +27,7 @@
 						</svg>
 					</a>
 				</li>
+
 				<li class="header__navbar-item">
 					<a href="#" class="header__navbar-item-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -37,6 +38,7 @@
 						</svg>
 					</a>
 				</li>
+
 				<li class="header__navbar-item">
 					<a href="#" class="header__navbar-item-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -50,6 +52,7 @@
 						</svg>
 					</a>
 				</li>
+
 				<li class="header__navbar-item">
 					<a href="#" class="header__navbar-item-link">
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
@@ -61,26 +64,28 @@
 				</li>
 			</ul>
 		</nav>
+
         <img src="img/dormitory_background.jpg" alt="dormitory_background" class="header__background">
+
         <div class="header__navigation">
-            <a href="index.html" class="header__navigation-info header__navigation-btn">Информация</a>
-            <a href="" class="header__navigation-dormitory header__navigation-btn">Общежития</a>
-            <a href="" class="header__navigation-documents header__navigation-btn">Документы</a>
-            <a href="" class="header__navigation-residence header__navigation-btn">Быт</a>
-            <a href="" class="header__navigation-contacts header__navigation-btn">Контакты</a>
+            <a href="index.html" class="header__navigation-info header__navigation-btn is-active" for="info">Информация</a>
+            <a href="" class="header__navigation-dormitory header__navigation-btn" for="dorms">Общежития</a>
+            <a href="" class="header__navigation-documents header__navigation-btn" for="docs">Документы</a>
+            <a href="" class="header__navigation-residence header__navigation-btn" for="goods">Быт</a>
+            <a href="" class="header__navigation-contacts header__navigation-btn" for="contacts">Контакты</a>
         </div>
+
 		<div class="header__wrapper">
 			<div class="header__title">
 				<h1 class="header__title-text">
 					Путеводитель по общежитиям
 				</h1>
 			</div>
-			
 		</div>
 	</header>
 
     <main class="main">
-        <div id="main-info" class="is-active">
+        <section id="main-info" class="main-section is-active">
             <div class="info__header">
                 <h2 class="info__title">Общая информация</h2>
             </div>
@@ -366,15 +371,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="main-dorms"></div>
-        <div id="main-docs">
-            <div class="docs-btns">
+        </section>
+        <section id="main-dorms" class="main-section"></div>
+        <section id="main-docs">
+            <div class="docs-btns" class="main-section">
                 <button class="docs-btns_btn"></button>
             </div>
-        </div>
-        <div id="main-residence"></div>
-        <div id="main-contacts"></div>
+        </section>
+        <section id="main-goods" class="main-section"></section>
+        <section id="main-contacts" class="main-section"></section>
     </main>
 
     <footer class="footer">
