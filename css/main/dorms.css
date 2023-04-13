@@ -1,0 +1,10 @@
+.main-dorms.is-active {
+    display: flex;
+}
+
+.main-dorms {
+    display: none;
+    /* flex-direction: column;
+    align-items: center;
+    max-width: 856px; */
+}

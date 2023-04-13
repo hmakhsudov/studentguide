@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
     let selectCards = document.querySelectorAll('.info-select__card');
     let content = document.querySelectorAll('.info');
     let headerBtns = document.querySelectorAll('.header__navigation-btn')
-    let mainSections = document.querySelectorAll('.main-section')
+    let docsBtns = document.querySelectorAll('.main-docs-btns__btn')
     
     selectCards.forEach(item => item.addEventListener('click', e => {
         let selectCardsTarget = e.target.getAttribute('data-card');
@@ -17,18 +17,24 @@ window.addEventListener('load', function() {
         // Prevent default behaviour - reload
         e.preventDefault()
 
-        let targetId = 'main-' + e.target.getAttribute('for')
-        
-        mainSections.forEach(item => {
+        let targetClass = 'main-' + e.target.getAttribute('for')
 
+        let arr = Array.from(document.querySelector("main").children)
+
+        arr.forEach(item => {
             item.classList.remove('is-active')
 
-            if (item.id == targetId) {
+            if (item.classList.contains(targetClass)) {
                 item.classList.add('is-active')
             }
         })
 
         headerBtns.forEach(item => item.classList.remove('is-active'))
+        e.target.classList.add('is-active')
+    }))
+
+    docsBtns.forEach(item => item.addEventListener('click', e => {
+        docsBtns.forEach(item => item.classList.remove('is-active'))
         e.target.classList.add('is-active')
     }))
 

@@ -1,0 +1,10 @@
+.main-stuff.is-active {
+    display: flex;
+}
+
+.main-stuff {
+    display: none;
+    /* flex-direction: column;
+    align-items: center;
+    max-width: 856px; */
+}

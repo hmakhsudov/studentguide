@@ -1,0 +1,40 @@
+.main-docs.is-active {
+    display: flex;
+}
+
+.main-docs {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    max-width: 856px;
+}
+
+.main-docs-btns {
+    display: flex;
+    height: 140px;
+}
+
+.main-docs-btns__btn {
+    height: 100%;
+    background: white;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.main-docs-btns__btn:nth-child(1) {
+    padding: 54px 90.5px;
+}
+
+.main-docs-btns__btn:nth-child(2) {
+    padding: 54px 62.5px;
+}
+
+.main-docs-btns__btn:hover {
+    background: #4B6EB9;
+    color: white;
+}
+
+.main-docs-btns__btn.is-active {
+    background: #4B6EB9;
+    color: white;
+}

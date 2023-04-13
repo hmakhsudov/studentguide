@@ -1,0 +1,10 @@
+.main-contacts.is-active {
+    display: flex;
+}
+
+.main-contacts {
+    display: none;
+    /* flex-direction: column;
+    align-items: center;
+    max-width: 856px; */
+}

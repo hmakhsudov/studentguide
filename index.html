@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Справочник студента</title>
-	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<header class="header">   
@@ -68,9 +68,9 @@
         <img src="img/dormitory_background.jpg" alt="dormitory_background" class="header__background">
 
         <div class="header__navigation">
-            <a href="index.html" class="header__navigation-info header__navigation-btn is-active" for="info">Информация</a>
+            <a href="index.html" class="header__navigation-info header__navigation-btn" for="info">Информация</a>
             <a href="" class="header__navigation-dormitory header__navigation-btn" for="dorms">Общежития</a>
-            <a href="" class="header__navigation-documents header__navigation-btn" for="docs">Документы</a>
+            <a href="" class="header__navigation-documents header__navigation-btn is-active" for="docs">Документы</a>
             <a href="" class="header__navigation-residence header__navigation-btn" for="goods">Быт</a>
             <a href="" class="header__navigation-contacts header__navigation-btn" for="contacts">Контакты</a>
         </div>
@@ -85,7 +85,7 @@
 	</header>
 
     <main class="main">
-        <section id="main-info" class="main-section is-active">
+        <section class="main-info">
             <div class="info__header">
                 <h2 class="info__title">Общая информация</h2>
             </div>
@@ -372,14 +372,61 @@
                 </div>
             </div>
         </section>
-        <section id="main-dorms" class="main-section"></div>
-        <section id="main-docs">
-            <div class="docs-btns" class="main-section">
-                <button class="docs-btns_btn"></button>
+
+        <section class="main-dorms"></section>
+
+        <section class="main-docs is-active">
+            <div class="main-docs-btns">
+                <button class="main-docs-btns__btn is-active">До зачисления</button>
+                <button class="main-docs-btns__btn">После зачисления</button>
+            </div>
+
+            <div class="main-docs-block">
+                <ul class="main-docs-block__list">
+                    <li class="main-docs-block__list-item">Указать нуждаемость в общежитии при подаче документов</li>
+                    <li class="main-docs-block__list-item">Просмотреть варианты общежитий</li>
+                    <li class="main-docs-block__list-item">Подготовить медицинские справки</li>
+                    <li class="main-docs-block__list-item">Получить приказ о зачислении</li>
+                </ul>
+            </div>
+
+            <div class="main-docs-accordeon ">
+                <div class="main-docs-accordeon-header">
+                    <span class="main-docs-accordeon-header__heading">Необходимые справки</span>
+
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 5L16 16M27 27L16 16M16 16L27 5L5 27" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="main-docs-accordeon-block">
+                    <ul class="main-docs-accordeon__list">
+                        <li class="main-docs-accordeon__list-item">Lorem ipsum dolor sit amet consectetur. Adipiscing massa feugiat et sit laoreet amet odio posuere. /li>
+                        <li class="main-docs-accordeon__list-item">Adipiscing orci purus ipsum integer turpis amet morbi nisl fermentum. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-docs-accordeon main-docs-accordeon_closed">
+                <div class="main-docs-accordeon-header">Сроки получения справок</div>
+                <div class="main-docs-accordeon-block">
+                    <ul class="main-docs-accordeon__list">
+                        <li class="main-docs-accordeon__list-item">Lorem ipsum dolor sit amet consectetur. Adipiscing massa feugiat et sit laoreet amet odio posuere. /li>
+                        <li class="main-docs-accordeon__list-item">Adipiscing orci purus ipsum integer turpis amet morbi nisl fermentum. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-docs-accordeon main-docs-accordeon_closed">
+                <div class="main-docs-accordeon-header">Сроки предоставления справок</div>
+                <div class="main-docs-accordeon-block">
+                    <ul class="main-docs-accordeon__list">
+                        <li class="main-docs-accordeon__list-item">Lorem ipsum dolor sit amet consectetur. Adipiscing massa feugiat et sit laoreet amet odio posuere. /li>
+                        <li class="main-docs-accordeon__list-item">Adipiscing orci purus ipsum integer turpis amet morbi nisl fermentum. </li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <section id="main-goods" class="main-section"></section>
-        <section id="main-contacts" class="main-section"></section>
+
+        <section class="main-goods"></section>
+        <section class="main-contacts"></section>
     </main>
 
     <footer class="footer">
