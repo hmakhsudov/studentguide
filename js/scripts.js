@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
-    let selectCards = document.querySelectorAll('.information-select__card');
-    let content = document.querySelectorAll('.information');
+    let selectCards = document.querySelectorAll('.info-select__card');
+    let content = document.querySelectorAll('.info');
     let headerBtns = document.querySelectorAll('.header__navigation-btn')
     let mainSections = document.querySelectorAll('.main-section')
     
@@ -32,14 +32,14 @@ window.addEventListener('load', function() {
         e.target.classList.add('is-active')
     }))
 
-    document.querySelectorAll('.information-rules__title').forEach((el) => {
+    document.querySelectorAll('.info-rules__title').forEach((el) => {
         el.addEventListener('click', () => {
             const parent = el.parentNode;
-            if (parent.classList.contains('information-rules__main_active')) {
-                parent.classList.remove('information-rules__main_active');
+            if (parent.classList.contains('info-rules__main_active')) {
+                parent.classList.remove('info-rules__main_active');
             } else {
-                document.querySelectorAll('.information-rules__main').forEach((child) => child.classList.remove('information-rules__main_active'))
-                parent.classList.add('information-rules__main_active');
+                document.querySelectorAll('.info-rules__main').forEach((child) => child.classList.remove('info-rules__main_active'))
+                parent.classList.add('info-rules__main_active');
             }
             // parent.classList.toggle('information-rules__main_active');
             

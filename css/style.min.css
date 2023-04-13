@@ -537,6 +537,12 @@ img {
 .main-section.is-active {
   display: block;
 }
+.info.is-active {
+  display: block;
+}
+.info {
+  display: none;
+}
 .info__headers {
   display: grid;
   justify-content: center;
