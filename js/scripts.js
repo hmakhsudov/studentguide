@@ -3,6 +3,7 @@ window.addEventListener('load', function() {
     let content = document.querySelectorAll('.info');
     let headerBtns = document.querySelectorAll('.header__navigation-btn')
     let docsBtns = document.querySelectorAll('.main-docs-btns__btn')
+    let accordeons = document.querySelectorAll('.accordeon')
     
     selectCards.forEach(item => item.addEventListener('click', e => {
         let selectCardsTarget = e.target.getAttribute('data-card');
@@ -48,7 +49,24 @@ window.addEventListener('load', function() {
                 parent.classList.add('info-rules__main_active');
             }
             // parent.classList.toggle('information-rules__main_active');
-            
         })
     });
+
+    accordeons.forEach(item => {
+        let icons = item.querySelectorAll(".accordeon-header__icon")
+        
+        icons.forEach(el => {
+            el.addEventListener("click", e => {
+                if (e.target.classList.contains("accordeon-header__icon_close")) {
+                    item.querySelector(".accordeon-block").classList.add("hidden")
+                }
+                else {
+                    item.querySelector(".accordeon-block").classList.remove("hidden")
+                }
+
+                icons.forEach(el => {el.classList.remove("hidden")})
+                e.target.classList.add("hidden")
+            });
+        }) 
+    })
 });
