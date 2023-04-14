@@ -1,5 +1,6 @@
-@import url(contacts.css);
-@import url(dorms.css);
-@import url(info.css);
-@import url(docs.css);
-@import url(stuff.css);
+@import url(main.css);
+@import url(sections/contacts.css);
+@import url(sections/dorms.css);
+@import url(sections/info.css);
+@import url(sections/docs.css);
+@import url(sections/stuff.css);

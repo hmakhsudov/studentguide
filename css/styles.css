@@ -2,3 +2,5 @@
 @import url(other/general.css);
 @import url(other/style.min.css);
 @import url(main/styles.css);
+@import url(header/header.css);
+@import url(footer/footer.css);
