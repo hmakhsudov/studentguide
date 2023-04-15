@@ -26,3 +26,30 @@
 .block__list-item:last-child {
     margin-bottom: 0;
 }
+
+.block-text {
+    text-align: center;
+    line-height: 140%
+}
+
+.block-text__heading {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 25px 0;
+}
+
+.block-text__body {
+    margin-bottom: 25px;
+}
+
+.block-text__body:last-child {
+    margin-bottom: 0;
+}
+
+.block-text__body_link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: white;
+}
