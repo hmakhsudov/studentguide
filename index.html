@@ -84,11 +84,11 @@
         <img src="img/dormitory_background.jpg" alt="dormitory_background" class="header__background">
 
         <div class="header__navigation">
-            <a href="" class="header__navigation-info header__navigation-btn" for="info">Информация</a>
+            <a href="" class="header__navigation-info header__navigation-btn is-active" for="info">Информация</a>
             <a href="" class="header__navigation-dormitory header__navigation-btn" for="dorms">Общежития</a>
             <a href="" class="header__navigation-documents header__navigation-btn" for="docs">Документы</a>
             <a href="" class="header__navigation-residence header__navigation-btn" for="goods">Быт</a>
-            <a href="" class="header__navigation-contacts header__navigation-btn is-active" for="contacts">Контакты</a>
+            <a href="" class="header__navigation-contacts header__navigation-btn" for="contacts">Контакты</a>
         </div>
 
         <div class="header__wrapper">
@@ -101,7 +101,7 @@
     </header>
 
     <main class="main">
-        <section class="main-info">
+        <section class="main-info is-active">
             <div class="info__header">
                 <h2 class="info__title">Общая информация</h2>
             </div>
@@ -423,7 +423,136 @@
         </section>
 
         <section class="main-dorms">
-
+            <section class="dormitory">
+                <div class="dormitory__wrapper">
+                    <div class="dormitory__pagination-wrapper">
+                        <ul class="dormitory__list dorm-pagination">
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button dorm-pagination__button-active">1</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">2</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">3</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">4</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">5</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">6</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">7</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">8</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">9</button></li>
+                            <li class="dorm-pagination__item"><button class="dorm-pagination__button">10</button></li>
+                        </ul>
+                    </div>
+    
+                    <div class="dormitories__specifications specifications">
+                        <button class="specifications__button"><img src="img/dormitory-arrow-left.svg" alt="" class="specifications__arrow"></button>
+                        <div class="specifications__image"></div>
+                        <button class="specifications__button"><img src="img/dormitory-arrow-right.svg" alt="" class="specifications__arrow"></button>
+                        <ul class="specifications__list rating">
+                            <li class="rating__item">
+                                <h3 class="rating__title">Цена</h3>
+                                <ul class="rating__list estimate">
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item"></li>
+                                    <li class="estimate__item"></li>
+                                    <li class="estimate__item"></li>
+                                </ul>
+                            </li>
+                            <li class="rating__item">
+                                <h3 class="rating__title">Комфорт</h3>
+                                <ul class="rating__list estimate">
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item"></li>
+                                    <li class="estimate__item"></li>
+                                </ul>
+                            </li>
+                            <li class="rating__item">
+                                <h3 class="rating__title">Инфраструктура</h3>
+                                <ul class="rating__list estimate">
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item estimate__item-picked"></li>
+                                    <li class="estimate__item"></li>
+                                    <li class="estimate__item"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="price">
+                <div class="price__wrapper">
+                    <img src="img/dormitory-money.png" alt="" class="price__image">
+                    <ul class="price__list">
+                        <li class="price__item">
+                            <p class="price__title">Бюджет — <span class="price__value">800</span> р.</p>
+                        </li>
+                        <li class="price__item">
+                            <p class="price__title">Платное — <span class="price__value">2800</span> р.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="benefits">
+                <div class="benefits__wrapper">
+                    <ul class="benefits__list">
+                        <li class="benefits__item">
+                            <img src="img/dormitory-leader.png" alt="" class="benefits__image">
+                            <p class="benefits__title">5 этажей</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="img/dormitory-sport.png" alt="" class="benefits__image">
+                            <p class="benefits__title">Спортзал</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="img/dormitory-door.png" alt="" class="benefits__image">
+                            <p class="benefits__title">Коридорный тип</p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="img/dormitory-relax.png" alt="" class="benefits__image">
+                            <p class="benefits__title">Коворкинг</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="parameters">
+                <div class="parameters__wrapper">
+                    <ul class="parameters__list">
+                        <li class="parameters__item">
+                            <img src="img/dormitory-furnace.png" alt="" class="parameters__image">
+                            <p class="parameters__title">2 кухни на этаж</p>
+                        </li>
+                        <li class="parameters__item">
+                            <img src="img/dormitory-shower.png" alt="" class="parameters__image">
+                            <p class="parameters__title">10 кабинок</p>
+                        </li>
+                        <li class="parameters__item">
+                            <img src="img/dormitory-washing.png" alt="" class="parameters__image">
+                            <p class="parameters__title">2 стиральные машинки 150 руб.</p>
+                        </li>
+                        <li class="parameters__item">
+                            <img src="img/dormitory-hanger.png" alt="" class="parameters__image">
+                            <p class="parameters__title">Коворкинг</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
+            <section class="address">
+                <div class="address__wrapper">
+                    <h2 class="address__heading"><img src="img/dormitory-mark.png" alt="" class="address__image">Малая Семёновская улица, 12</h2>
+                    <ul class="address__list">
+                        <li class="address__item"><p class="address__title">До Прянишникова (Пряники) ~ 1.30 часа</p></li>
+                        <li class="address__item"><p class="address__title">До Большой Семеновской (БС) ~30 м.</p></li>
+                        <li class="address__item"><p class="address__title">До Павла Корчагина (ПК) ~ 1.30 часа</p></li>
+                        <li class="address__item"><p class="address__title">До Михалковской (Михалка)~1 час</p></li>
+                        <li class="address__item"><p class="address__title">До Автозаводской (Автоваз)~1 час</p></li>
+                    </ul>
+                    <div class="address__map"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?from=mapframe&ll=37.711433%2C55.784307&source=mapframe&um=constructor%3Afbb2272bd43874d2f07fb4fe89c7f03cafb56b61a80c76519c92ec62fbce174a&utm_medium=mapframe&utm_source=maps&z=18.57" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.711433%2C55.784307&source=mapframe&um=constructor%3Afbb2272bd43874d2f07fb4fe89c7f03cafb56b61a80c76519c92ec62fbce174a&utm_source=mapframe&z=18.57"  frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </section>
         </section>
 
         <section class="main-docs">
@@ -630,7 +759,7 @@
             </div>
         </section>
 
-        <section class="main-contacts is-active">
+        <section class="main-contacts">
             <div class="main-contacts-blocks">
                 <div class="block">
                     <div class="block-text">
