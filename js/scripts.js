@@ -1,10 +1,11 @@
 window.addEventListener('load', function() {
-    let selectCards = document.querySelectorAll('.info-select__card');
-    let content = document.querySelectorAll('.info');
+    let selectCards = document.querySelectorAll('.info-select__card')
+    let content = document.querySelectorAll('.info')
     let headerBtns = document.querySelectorAll('.header__navigation-btn')
+    let docsBlocks = document.querySelectorAll('.main-docs-blocks-block')
     let docsBtns = document.querySelectorAll('.main-docs-btns__btn')
     let accordeons = document.querySelectorAll('.accordeon')
-    
+  
     selectCards.forEach(item => item.addEventListener('click', e => {
         let selectCardsTarget = e.target.getAttribute('data-card');
         selectCards.forEach(el => el.classList.remove('is-active'));
@@ -35,6 +36,17 @@ window.addEventListener('load', function() {
     }))
 
     docsBtns.forEach(item => item.addEventListener('click', e => {
+        let targetClass = e.target.getAttribute("for")
+
+        let blocks = Array.from(docsBlocks)
+        console.log(blocks.forEach(el => {
+            el.classList.add("hidden")
+           
+            if (el.classList.contains(targetClass)) {
+                el.classList.remove("hidden")
+            }
+        }));
+
         docsBtns.forEach(item => item.classList.remove('is-active'))
         e.target.classList.add('is-active')
     }))

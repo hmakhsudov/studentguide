@@ -426,19 +426,31 @@
 
         <section class="main-docs is-active">
             <div class="main-docs-btns">
-                <button class="main-docs-btns__btn is-active">До зачисления</button>
-                <button class="main-docs-btns__btn">После зачисления</button>
+                <button class="main-docs-btns__btn is-active" for="main-docs-block_1">До зачисления</button>
+                <button class="main-docs-btns__btn" for="main-docs-block_2">После зачисления</button>
             </div>
 
-            <div class="main-docs-block">
-                <ul class="main-docs-block__list">
-                    <li class="main-docs-block__list-item">Указать нуждаемость в общежитии при подаче документов</li>
-                    <li class="main-docs-block__list-item">Просмотреть варианты общежитий</li>
-                    <li class="main-docs-block__list-item">Подготовить медицинские справки</li>
-                    <li class="main-docs-block__list-item">Получить приказ о зачислении</li>
-                </ul>
+            <div class="main-docs-blocks">
+                <div class="main-docs-blocks-block main-docs-block_1 block">
+                    <ul class="block__list">
+                        <li class="block__list-item">Указать нуждаемость в общежитии при подаче документов</li>
+                        <li class="block__list-item">Просмотреть варианты общежитий</li>
+                        <li class="block__list-item">Подготовить медицинские справки</li>
+                        <li class="block__list-item">Получить приказ о зачислении</li>
+                    </ul>
+                </div>
+    
+                <div class="main-docs-blocks-block main-docs-block_2 block hidden">
+                    <ul class="block__list">
+                        <li class="block__list-item">Выбрать из доступных общежитий в личном кабинете абитуриента в назначенное время</li>
+                        <li class="block__list-item">Каждый год выбор в происходит в конце августа (число дня месяца может меняться)</li>
+                        <li class="block__list-item">Прочитать правила внутреннего порядка и памятку о ЧП</li>
+                        <li class="block__list-item">Подписать договор найма в личном кабинете абитуриента</li>
+                        <li class="block__list-item">Заселиться в удобное для тебя время (если есть возможность, лучше ехать ко времени, назначенному в личном кабинете абитуриента)</li>
+                    </ul>
+                </div>
             </div>
-
+            
             <div class="main-docs-accordeons">
                 <div class="accordeon closed">
                     <div class="main-docs-accordeon-header_1 accordeon-header">
@@ -514,7 +526,11 @@
             </div>
         </section>
 
-        <section class="main-goods"></section>
+        <section class="main-goods">
+            <div class="main-goods-accordeons">
+                
+            </div>
+        </section>
         <section class="main-contacts"></section>
     </main>
 

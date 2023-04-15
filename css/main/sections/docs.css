@@ -42,24 +42,9 @@
     color: white;
 }
 
-.main-docs-block {
+.main-docs-blocks {
     width: 100%;
-    height: 272px;
-    background: white;
-    padding: 56px 64px;
-    border-radius: 0px 50px;
     margin-top: 64px;
-}
-
-.main-docs-block__list {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-size: 20px;
-    line-height: 28px;
-    justify-content: space-between;
-    padding-left: 20px;
-    white-space: 16px;
 }
 
 .main-docs-accordeons {

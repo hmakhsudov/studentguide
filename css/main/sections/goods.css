@@ -1,0 +1,14 @@
+.main-goods.is-active {
+    display: flex;
+}
+
+.main-goods {
+    display: none;
+}
+
+.main-goods-accordeons {
+    width: 100%;
+    border-radius: 50px 0 50px 0;
+    overflow: hidden;
+    margin-top: 64px;
+}
