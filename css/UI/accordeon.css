@@ -4,8 +4,8 @@
 }
 
 .accordeon-header {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     height: 112px;
     width: 100%;
     padding: 40px 64px;
@@ -19,31 +19,56 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    color: white;
+    transition: 0.4s ease-in-out;
+    position: relative;
 }
 
-.accordeon-header__icon:hover {
-    cursor: pointer;
-    opacity: 0.5;
+.accordeon-header__heading {
+    transition: 0.4s ease-in-out;
+    position: relative;
 }
 
-.accordeon-header__icon-svg {
-    pointer-events: none;
+.accordeon-header__heading span {
+    bottom: 40%;
+    transition: 0.4s ease-in-out;
 }
 
-.accordeon-header__icon_arrow.hidden {
-    display: none;
+.accordeon-header__heading .left {
+    rotate: 45deg;
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    right: 16px;
+    margin-left: auto;
+    display: block;
 }
 
-.accordeon-header__icon_close.hidden {
-    display: none;
+.accordeon-header__heading .right {
+    rotate: -45deg;
+    height: 3px;
+    width: 25px;
+    position: absolute;
+    right: 0;
+    margin-left: auto;
+    display: block;
 }
 
-.accordeon-block {
-    padding: 32px 64px;
-    background: white;
+.accordeon-header .accordeon-header__heading span{
+    background-color: white;
 }
 
-.accordeon-block.hidden {
+.main-docs-accordeon-header_3 .accordeon-header__heading,
+.main-goods-accordeon-header_4 .accordeon-header__heading{
+    color: black;
+}
+
+.main-docs-accordeon-header_3 .accordeon-header__heading span,
+.main-goods-accordeon-header_4 .accordeon-header__heading span{
+    background-color: black;
+}
+
+.accordeon_closed .accordeon-block{
     display: none;
 }
 
@@ -59,4 +84,23 @@
 
 .accordeon-block__list-item:last-child {
     margin-bottom: 0px;
+}
+
+.accordeon_active .accordeon-block {
+    padding: 32px 64px;
+    background: white;
+}
+
+.accordeon_active .accordeon-header .accordeon-header__heading{
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+.accordeon_active .accordeon-header .accordeon-header__heading .left{
+    right: 0;
+    rotate: 135deg;
+}
+
+.accordeon_active .accordeon-header .accordeon-header__heading .right{
+    rotate: -135deg;
 }

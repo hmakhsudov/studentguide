@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     let content = document.querySelectorAll('.info')
     let headerBtns = document.querySelectorAll('.header__navigation-btn')
     let docsBlocks = document.querySelectorAll('.main-docs-blocks-block')
-    let docsBtns = document.querySelectorAll('.main-docs-btns__btn')
+    let docsBtns = document.querySelectorAll('.main-docs-btns__btn') //до после зачисления
     let accordeons = document.querySelectorAll('.accordeon')
   
     selectCards.forEach(item => item.addEventListener('click', e => {
@@ -64,21 +64,36 @@ window.addEventListener('load', function() {
         })
     });
 
+    document.querySelectorAll('.accordeon-header').forEach((el) => {
+        el.addEventListener('click', () => {
+            const parent = el.parentNode;
+            if (parent.classList.contains('accordeon_active')) {
+                parent.classList.remove('accordeon_active');
+                parent.classList.add('accordeon_closed');
+            } else {
+                document.querySelectorAll('.accordeon').forEach((child) => child.classList.remove('accordeon_active'))
+                parent.classList.remove('accordeon_closed');
+                parent.classList.add('accordeon_active');
+            }
+        })
+    });
+
     accordeons.forEach(item => {
         let icons = item.querySelectorAll(".accordeon-header__icon")
         
         icons.forEach(el => {
             el.addEventListener("click", e => {
-                if (e.target.classList.contains("accordeon-header__icon_close")) {
+                if (e.target.classList.contains("hidden")) {
                     item.querySelector(".accordeon-block").classList.add("hidden")
                 }
                 else {
                     item.querySelector(".accordeon-block").classList.remove("hidden")
+
                 }
 
                 icons.forEach(el => {el.classList.remove("hidden")})
                 e.target.classList.add("hidden")
             });
-        }) 
+        })
     })
 });
