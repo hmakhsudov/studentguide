@@ -153,8 +153,6 @@ LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),  # Path to the locale directory in your project directory
 ]
 
-AUTH_USER_MODEL = 'site_auth.CustomUser'
-
 
 LOGIN_REDIRECT_URL = 'main'
 
